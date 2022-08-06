@@ -926,6 +926,7 @@ class CommandVisualMode extends BaseCommand {
 @RegisterAction
 class CommandReselectVisual extends BaseCommand {
   modes = [Mode.Normal];
+  // ilyagr: gv implementation pt 2
   keys = ['g', 'v'];
 
   public override async exec(position: Position, vimState: VimState): Promise<void> {

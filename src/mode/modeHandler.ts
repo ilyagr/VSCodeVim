@@ -925,6 +925,7 @@ export class ModeHandler implements vscode.Disposable, IModeHandler {
 
     if (isVisualMode(this.vimState.currentMode) && !this.vimState.isRunningDotCommand) {
       // Store selection for commands like gv
+      // ilyagr: `gv` implementation. Will this work with multiple selections??
       this.vimState.lastVisualSelection = {
         mode: this.vimState.currentMode,
         start: this.vimState.cursorStartPosition,

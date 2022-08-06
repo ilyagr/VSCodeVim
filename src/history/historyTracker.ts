@@ -431,6 +431,7 @@ export class HistoryTracker {
    * text that was marked.
    */
   private updateAndReturnMarks(): IMark[] {
+    // ilyagr: Important marks method. Unclear if works with multiple cursors
     const previousMarks = this.getAllCurrentDocumentMarks();
     const newMarks: IMark[] = [];
 
